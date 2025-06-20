@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>College Finder</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        main {
+            flex: 1;
+        }
+        
+        .intro {
+            padding: 30px;
+            text-align: center;
+            background-color: #fff;
+        }
+        
+        .intro h2 {
+            margin-top: 0;
+        }
+        
+        .container {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .college-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .college-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .college-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .college-card-content {
+            padding: 15px;
+        }
+        
+        .college-card h3 {
+            margin: 10px 0 5px;
+        }
+        
+        .college-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .college-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .contact {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>College Finder</h1>
+        <p>Your gateway to top engineering colleges in India</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to College Finder</h2>
+            <p>Explore some of the best engineering institutions in the country. Click on a college to learn more or apply directly through their official websites.</p>
+        </section>
+
+        <div class="container">
+            <!-- College 1 -->
+            <div class="college-card">
+                <a href="scms.html" target="_blank">
+                    <img src="sset-1.webp" alt="SCMS College">
+                    <div class="college-card-content">
+                        <h3>SCMS School of Engineering and Technology</h3>
+                        <p>Located in Kerala, SSET is known for its innovative curriculum and strong industry connections in engineering and management fields.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- College 2 -->
+            <div class="college-card">
+                <a href="iitb.html" target="_blank">
+                    <img src="8.jpg" alt="IIT Bombay">
+                    <div class="college-card-content">
+                        <h3>IIT Bombay</h3>
+                        <p>A premier institute for engineering, design, and research. IIT Bombay consistently ranks among the top in Asia and globally.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- College 3 -->
+            <div class="college-card">
+                <a href="nitc.html" target="_blank">
+                    <img src="4-35.jpg" alt="NIT Calicut">
+                    <div class="college-card-content">
+                        <h3>NIT Calicut</h3>
+                        <p>One of the top NITs in India, offering quality education and vibrant campus life in the field of technology and sciences.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 College Finder | All rights reserved
+        <div class="contact">
+            Contact us: info@collegefinder.com | +91 98765 43210
+        </div>
+    </footer>
+
+</body>
+
+</html>

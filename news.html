@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Signup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        body,
+        html {
+            height: 100%;
+        }
+        
+        .main-container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .left-panel {
+            width: 50%;
+            background-color: #2ab69f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+        }
+        
+        .right-panel {
+            width: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+        }
+        
+        .left-panel h2,
+        .right-panel h2 {
+            margin-bottom: 20px;
+        }
+        
+        .left-panel p,
+        .right-panel p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .sign-in-button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        .sign-up-button {
+            background-color: #2ab69f;
+            color: white;
+            margin-top: 20px;
+        }
+        
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .form-container input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .social-buttons {
+            margin: 15px 0;
+        }
+        
+        .social-buttons div {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div>
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="button sign-in-button">SIGN IN</button>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div>
+                <h2>Create Account</h2>
+                <div class="social-buttons">
+                    <div>f</div>
+                    <div>G+</div>
+                    <div>in</div>
+                </div>
+                <p>or use your email for registration:</p>
+                <div class="form-container">
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button class="button sign-up-button">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
